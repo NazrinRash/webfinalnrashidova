@@ -1,0 +1,138 @@
+
+
+<html>
+   
+    <head> 
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@300&display=swap" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <style>
+         body {
+           font-family: '', serif;
+           font-size: 16px;
+         }
+       </style>
+   
+      <style>
+         .button {
+         background-color: #af4c91;
+         border: none;
+         color: black;
+         padding: 16px 34px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 18px;
+         margin: 4px 2px;
+         cursor: pointer;
+         }
+      </style>
+   
+      <head>
+         <title>HTML Backgorund Color</title>
+      </head>
+      <body >
+      </body>
+      <body style= "background-color:rgb(185, 9, 132);">
+         <center><h1><p style="margin-top:2em;margin-bottom:2em;border-width: 2px;"><b>Nazrin Rashidova</b></h1></center>
+        <center><img src="images/nazrin.png" alt="HTML5 Icon" style="width:400px;height:400px;margin-bottom: 50px;"></center>
+   
+   
+        <div class="w3-container">
+           <center><button onclick="document.getElementById('id01').style.display='block'" class="button">About Me</button>
+            <button onclick="document.getElementById('id02').style.display='block'" class="button">Contact me</button></center>
+       
+         <div id="id01" class="w3-modal">
+           <div class="w3-modal-content w3-animate-top w3-card-4">
+             <header class="w3-container w3-teal"> 
+               <span onclick="document.getElementById('id01').style.display='none'" 
+               class="w3-button w3-display-topright">&times;</span>
+               <h2>Nazrin Rashidova</h2>
+             </header>
+             <div class="w3-container">
+               <p>My name is Nazrin and I'm from Azerbaijan, Baku. 
+                   I'm a CPA student and this is my second semester in Seneca.
+                    My passion for programming began at the Hacettepe University in Turkey, Ankara, where I was studying Computer Science and Information Technologies.
+                     It amazed me how this field affects the world around us – the way it is changing the way we live, network, and do business. 
+                     I was doing well and was always dreaming to tie my career with programming. 
+                     So, the Computer programming and analysis program at Seneca College is an opportunity to learn about various aspects of back- and front-end development, website graphic design, and mobile application development.
+                        </p>
+             </div>
+           </div>
+         </div>
+         <a href="final assesment 2\NazrinRashidovaResume.pdf" class="button1" download="resume">Resume</a>
+   
+         <div id="id02" class="w3-modal">
+            <div class="w3-modal-content w3-animate-top w3-card-4">
+              <header class="w3-container w3-teal"> 
+                <span onclick="document.getElementById('id02').style.display='none'" 
+                class="w3-button w3-display-topright">&times;</span>
+                <h2>CPA Student</h2>
+              </header>
+              <div class="w3-container">
+                <p>Seneca College 2021-2023<br>
+                  Name:Nazrin Rashidova <br>
+                 Date: 12 APRIL 2022<br>
+               Professors' Name: Muath Alzghool<br>
+               WEB222 ZAA
+               email:nrashidova1@myseneca
+               <br>
+               Honesty Statement:
+               I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No part of this assessment has been copied manually or electronically from any other source
+                (including web sites) except for the information supplied by the WEB222 instructors and / or made available in this assessment for my use. I also declare
+                 that no part of this assignment has been distributed to other students.
+              </p>
+              </div>
+            </div>
+          </div>
+       </div>
+        
+   
+   
+       <div class="form">
+        <h1>Contact Details</h1>
+      <form action="https://httpbin.org/post" method="POST" id="frm">
+          <div>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          </div>
+          <div>
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            </div>
+          <div>
+            <label for="lname">Last Name</label>
+            <input type="email" id="email" name="email" placeholder="Your email here..">
+          </div><div>
+            <label for="country">city</label>
+            <select id="country" name="country">
+              <option value="Greece">Greece</option>
+              <option value="Azerbaijan">Azerbaijan</option>
+              <option value="usa">USA</option>
+              <option value="Turkey">Turkey</option>
+            </select>
+            <label for="postal">Postal code</label>
+            <input type="text" id="areacode" name="areacode" placeholder="postal code">
+          </div><div>
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          </div>
+          <div>
+              <input type="radio" id="que" name="question" value="que">
+          <label>question</label><br>
+              <input type="radio" id="comm" name="comment" value="comment">
+          <label>comment</label><br>
+              <input type="radio" id="hir" name="hiring" value="hiring" onclick="ShowHideDiv()">
+          <label>hiring</label>
+          </div>
+          <div id="rate"  style="display: none">
+              <input type="rate" id="rt" name="rate" value="rate">
+          <label>hourly Wage</label>
+          </div>
+          <input type="submit" value="Submit" id="btn">
+        </form>
+    </div>
+</body>
+   </html>
